@@ -6,10 +6,12 @@
 </template>
 
 <script>
-import Button from "./Button"
+import Button from "./Button.vue"
 export default {
     name: "Header",
-    components: Button,
+    components: {
+        Button,
+    },
     props: {
         msg : String
     }
@@ -18,8 +20,7 @@ export default {
 
 <style scoped>
     header {
-        display: flex ;
-
+        display: flex;
         justify-content: space-between;
         align-items: center;
     }
