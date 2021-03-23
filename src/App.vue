@@ -19,5 +19,7 @@ export default {
 </script>
 
 <style>
-
+  body {
+    font-family: monospace;
+  }
 </style>

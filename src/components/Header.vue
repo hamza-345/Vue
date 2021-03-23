@@ -1,12 +1,15 @@
 <template>
     <header>
         <h2> {{msg}} </h2>
-        <button style = "color: green" class="btn btn-success">Add task</button>
+        <Button/>
     </header>
 </template>
 
 <script>
+import Button from "./Button"
 export default {
+    name: "Header",
+    components: Button,
     props: {
         msg : String
     }
@@ -15,7 +18,8 @@ export default {
 
 <style scoped>
     header {
-        display: flex;
+        display: flex ;
+
         justify-content: space-between;
         align-items: center;
     }
